@@ -9,7 +9,14 @@ class Dictionary {
    * La palabra devuelta debe ser aleatoria.
    */
   String makeRandomWord() {
-    return "bullseye"; // stub
-    
+    List<String> palabrasDiccionario = [
+      "astronomia",
+      "mineria",
+      "naranja",
+      "papaya",
+      "higo",
+      "mascherano"
+    ];
+    return palabrasDiccionario.toString();
   }
 }
