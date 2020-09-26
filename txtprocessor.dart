@@ -13,7 +13,12 @@ class TxtProcessor {
    * No es sensitivo a mayúsculas y minúsculas, la 'a' y la 'A' son igual.
    */
   static bool isNewLetterInList(String letter, List<String> letterTrialList) {
-    return true; // stub
+    for (int i = 0; i < letterTrialList.length; i++) {
+      if (letterTrialList[i] == letter) {
+        return true;
+      }
+    }
+    return false; // stub
   }
 
   /*
