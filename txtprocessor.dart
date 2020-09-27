@@ -41,7 +41,18 @@ class TxtProcessor {
    * devolverá "b u _ _ s e _ e"
    */
   static String guessedLetters(String keyword, List<String> letterTrialList) {
-    return "b u _ _ s e _ e"; // stub
+      for (int x = 0; x < keyword.length; x++)
+      {
+          if (letterTrialList.contains(keyword[x]))
+        {
+          print(keyword[x]);
+        }
+        else
+        {
+          print("_");
+        }
+      }    
+    // @jotanovazq
   }
 
   /*

@@ -52,6 +52,7 @@ class Game {
     gameStatus = (mistakeCounter < MAX_MISTAKES) ? Status.playing : Status.lost;
     missedLetters =
         TxtProcessor.missedLetters(keyword, letterTrialList); // ~ "a i t"
+  
   }
 
   void render_game() {
@@ -62,4 +63,5 @@ class Game {
     if (gameStatus == Status.lost) renderer.drawFailure();
     if (gameStatus == Status.won) renderer.drawSuccess();
   }
+
 }
