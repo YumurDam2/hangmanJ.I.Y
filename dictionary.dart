@@ -1,3 +1,5 @@
+import 'dart:math';
+
 class Dictionary {
   /*
    * #1. Se puede tener:
@@ -15,8 +17,12 @@ class Dictionary {
       "naranja",
       "papaya",
       "higo",
-      "mascherano"
+      "auriculares",
+      "dokker",
+      "mercurio"
     ];
-    return palabrasDiccionario.toString();
+    Random random = new Random();
+    int aleatorio = random.nextInt(palabrasDiccionario.length);
+    return palabrasDiccionario[aleatorio].toString();
   }
 }
