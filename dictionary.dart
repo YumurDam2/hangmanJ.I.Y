@@ -9,7 +9,7 @@ class Dictionary {
    * La palabra devuelta debe ser aleatoria.
    */
   String makeRandomWord() {
-    return "ratatata"; // stub
+    return "bullseye"; // stub
     
   }
 }
