@@ -15,5 +15,6 @@ class Input {
     String s = String.isNewLetterInList(c);
     print(s);
     return s;
+  
   }
 }
