@@ -10,6 +10,5 @@ class Dictionary {
    */
   String makeRandomWord() {
     return "bullseye"; // stub
-    
   }
 }
