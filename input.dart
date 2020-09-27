@@ -12,7 +12,7 @@ class Input {
     stdin.lineMode = false;
     stdout.write("Letra: ");
     int c = stdin.readByteSync(); // 10=Enter, 27=Esc
-    String s = String.fromCharCode(c);
+    String s = String.isNewLetterInList(c);
     print(s);
     return s;
   }
