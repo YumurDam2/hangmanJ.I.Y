@@ -20,7 +20,7 @@ class Input {
 
   // @jotanovazq
 
-  static bool esLetra(let){
+  static bool esLetra(String let){
     int l = let.codeUnitAt("0");
 
     if (((l > 90) && (l < 97)) || (l < 65) || (l > 122)) {
