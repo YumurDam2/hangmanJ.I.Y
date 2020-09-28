@@ -13,7 +13,7 @@ class Input {
     stdout.write("Letra: ");
     int c = stdin.readByteSync(); // 10=Enter, 27=Esc
     String s = String.fromCharCode(c);
-    if(esLetra(let) == false) {
+    if(esLetra(s) == false) {
       s = "?";
     }
   }
@@ -21,7 +21,7 @@ class Input {
   // @jotanovazq
 
   static bool esLetra(String let){
-    int l = let.codeUnitAt("0");
+    int l = let.codeUnitAt(0);
 
     if (((l > 90) && (l < 97)) || (l < 65) || (l > 122)) {
       return false;
