@@ -13,15 +13,15 @@ class Input {
     stdout.write("Letra: ");
     int c = stdin.readByteSync(); // 10=Enter, 27=Esc
     String s = String.fromCharCode(c);
-    if(esLetra() == false) {
+    if(esLetra(let) == false) {
       s = "?";
     }
   }
 
   // @jotanovazq
 
-  static bool esLetra(){
-    int l = letra.codeUnitAt("0");
+  static bool esLetra(let){
+    int l = let.codeUnitAt("0");
 
     if (((l > 90) && (l < 97)) || (l < 65) || (l > 122)) {
       return false;
