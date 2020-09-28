@@ -7,14 +7,28 @@ class Input {
    * para no ser tratado como una letra valida.
    * Por ejemplo, en isNewLetterInList que devuelva falso.
    */
+
+  
+
   static String readLetter() {
     stdin.echoMode = false;
     stdin.lineMode = false;
     stdout.write("Letra: ");
     int c = stdin.readByteSync(); // 10=Enter, 27=Esc
-    String s = String.isNewLetterInList(c);
-    print(s);
-    return s;
-    
+    String s = String.fromCharCode(c);
+    if(esLetra(s) == false) {
+      s = "?";
+    }
+  }
+
+  // @jotanovazq
+
+  static bool esLetra(){
+    int l = letra.codeUnitAt("0");
+
+    if (((l > 90) && (l < 97)) || (l < 65) || (l > 122)) {
+      return false;
+    }
+    return true;
   }
 }
