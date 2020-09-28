@@ -13,14 +13,23 @@ class TxtProcessor {
    * No es sensitivo a mayúsculas y minúsculas, la 'a' y la 'A' son igual.
    */
   static bool isNewLetterInList(String letter, List<String> letterTrialList) {
-    return true; // stub
+    for (int i = 0; i < letterTrialList.length; i++) {
+      if (letterTrialList[i] == letter) {
+        return true;
+      }
+    }
+    return false; // stub
   }
 
   /*
    * #4. Comprobar si una letra está en una palabra.
    */
   static bool isLetterInWord(String letter, String word) {
-    return false; // stub
+    bool encontrado = false;
+    if (word.contains(letter)) {
+      encontrado = true;
+    }
+    return encontrado;
   }
 
   /*
@@ -56,7 +65,9 @@ class TxtProcessor {
     var missedLetters = "";
     // stub (está mal, incorpora todas las letras, era para ver cambios)
     for (int i = 0; i < letterTrialList.length; i++) {
-      missedLetters = "$missedLetters ${letterTrialList[i]}";
+      if (!keyword.contains(letterTrialList[i])) {
+        missedLetters = "$missedLetters ${letterTrialList[i]}";
+      }
     }
     return missedLetters;
   }

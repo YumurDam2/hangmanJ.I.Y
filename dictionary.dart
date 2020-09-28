@@ -1,3 +1,5 @@
+import 'dart:math';
+
 class Dictionary {
   /*
    * #1. Se puede tener:
@@ -9,7 +11,18 @@ class Dictionary {
    * La palabra devuelta debe ser aleatoria.
    */
   String makeRandomWord() {
-    return "bullseye"; // stub
-    
+    List<String> palabrasDiccionario = [
+      "astronomia",
+      "mineria",
+      "naranja",
+      "papaya",
+      "higo",
+      "auriculares",
+      "dokker",
+      "mercurio"
+    ];
+    Random random = new Random();
+    int aleatorio = random.nextInt(palabrasDiccionario.length);
+    return palabrasDiccionario[aleatorio].toString();
   }
 }
