@@ -7,9 +7,6 @@ class Input {
    * para no ser tratado como una letra valida.
    * Por ejemplo, en isNewLetterInList que devuelva falso.
    */
-
-  //Julen
-
   static String readLetter() {
     stdin.echoMode = false;
     stdin.lineMode = false;
