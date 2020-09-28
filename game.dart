@@ -50,6 +50,7 @@ class Game {
       clean_up();
     }
   }
+  // Julen
   // @jotanovazq
 
   void update_game() {

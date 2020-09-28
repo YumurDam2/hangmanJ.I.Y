@@ -8,7 +8,7 @@ class Input {
    * Por ejemplo, en isNewLetterInList que devuelva falso.
    */
 
-  
+  //Julen
 
   static String readLetter() {
     stdin.echoMode = false;
